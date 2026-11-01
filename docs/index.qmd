@@ -1,0 +1,14 @@
+---
+title: "Who pays for electricity non-payment in South Africa?"
+---
+
+This site hosts three linked research projects on electricity non-payment, tariffs and
+affordability in South Africa.
+
+- **Project A:** who pays, who can't, and what the tariff would be if able-to-pay
+  non-payers paid.
+- **Project B:** whether Eskom's tariff requests are fair and market-related.
+- **Project C:** tariff-driven defaults and a tipping-point model.
+
+See the [dashboard](dashboard.qmd) for Project A. Code and data notes are in the GitHub
+repository.

@@ -1,0 +1,11 @@
+measure,date,value,unit,source,verified
+municipal_debt_to_eskom_total,2025-03-31,94.6,rand_bn,Engineering News Mar 2026 (confirm in Eskom results),false
+municipal_debt_to_eskom_total,2026-03-31,111.6,rand_bn,Eskom FY2026 results as reported by Daily Investor and Sunday Tribune (confirm in Eskom results),false
+municipal_debt_to_eskom_total,2026-07-31,120.26,rand_bn,Ministerial reply NW4902 (pmg.org.za/committee-question/40708) as reported by TimesLIVE 23 Sep 2026 (read the reply to confirm),false
+municipal_debt_programme_participants,2025-12-31,85.2,rand_bn,National Treasury 2026 Budget Review (71 participants; 15 consistently met conditions),true
+eskom_revenue_not_recognised_collection_risk,2026-03-31,15.8,rand_bn,Ministerial reply NW4902 (net amount; about 4.5% of revenue; read the reply to confirm),false
+ghs_households_not_paying_electricity,2025-12-31,2668635,households,Own weighted calculation: GHS 2025 household file eng_pay = 2 (No),true
+ghs_share_not_paying_among_yes_no,2025-12-31,14.67,percent,Own weighted calculation: GHS 2025 eng_pay; 2.67m of 18.19m answering Yes or No,true
+nfcm_indigent_households_identified,2023-06-30,2757643,households,Stats SA NFCM time series 2006-2023 (2023 value marked with an asterisk),true
+nfcm_free_basic_electricity_households,2023-06-30,1849746,households,Stats SA NFCM time series 2006-2023 (2023 value marked with an asterisk),true
+nfcm_indigent_beneficiaries_electricity,2023-06-30,1721812,households,Stats SA NFCM time series 2006-2023 (2023 value marked with an asterisk),true
