@@ -1,0 +1,17 @@
+name: sa-electricity
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pandas
+  - numpy
+  - matplotlib
+  - plotly
+  - pyyaml
+  - pyreadstat
+  - openpyxl
+  - jupyterlab
+  - pytest
+  - pip
+  - pip:
+      - streamlit

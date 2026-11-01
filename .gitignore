@@ -1,0 +1,15 @@
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+.DS_Store
+.quarto/
+_site/
+_freeze/
+
+# Raw data is never committed (survey licences usually forbid redistribution)
+data/raw/**
+!data/raw/SOURCES.md
+data/interim/**
+
+# Fake demo data and anything built from it
+projects/a_who_pays/outputs/synthetic/

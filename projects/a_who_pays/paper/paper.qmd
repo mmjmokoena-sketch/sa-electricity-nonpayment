@@ -1,0 +1,49 @@
+---
+title: "Who pays for electricity non-payment in South Africa?"
+subtitle: "Project A: measurement, affordability and a counterfactual tariff"
+author: "Mokgele (YOUR-SURNAME)"
+date: today
+format:
+  html:
+    toc: true
+  docx: default
+bibliography: references.bib
+---
+
+## 1. Question and motivation
+
+State the question, why it matters, and what the paper contributes.
+
+## 2. Data and definitions
+
+Describe each source, the survey weights, the three non-payment measures, and the
+affordability threshold. Link to `config/assumptions.yaml`.
+
+## 3. Measuring non-payment
+
+```{python}
+#| echo: false
+import pandas as pd
+latest = pd.read_csv("../outputs/tables/nonpayment_latest.csv")
+latest
+```
+
+## 4. Can't pay versus won't pay
+
+```{python}
+#| echo: false
+pd.read_csv("../outputs/tables/split_summary.csv").round(3)
+```
+
+## 5. Counterfactual tariff
+
+State the formula, the assumptions, and the results across scenarios.
+
+## 6. Limits
+
+List every limit: survey timing, linking two surveys, self-reported payment, the
+bounds method, municipal definitions of indigence.
+
+## 7. Conclusion
+
+## References
