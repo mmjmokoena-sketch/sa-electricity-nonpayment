@@ -1,0 +1,17 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "SA Electricity Non-Payment"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Overview
+      - href: dashboard.qmd
+        text: Dashboard
+
+format:
+  html:
+    theme: cosmo
+    toc: true

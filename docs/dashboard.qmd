@@ -1,0 +1,57 @@
+---
+title: "Project A dashboard"
+format: dashboard
+---
+
+```{python}
+#| include: false
+from pathlib import Path
+import pandas as pd
+import plotly.express as px
+
+tables = Path("..") / "projects" / "a_who_pays" / "outputs" / "tables"
+grid = pd.read_csv(tables / "threshold_grid.csv")
+coverage = pd.read_csv(tables / "indigent_coverage.csv")
+split = pd.read_csv(tables / "split_summary.csv")
+cf = pd.read_csv(tables / "counterfactual_grid.csv")
+headline = grid.loc[(grid["threshold"] - 0.10).abs().idxmin()]
+```
+
+## Row {height=25%}
+
+```{python}
+#| content: valuebox
+#| title: "Households above a 10% bill-to-income threshold"
+dict(icon="house", color="primary", value=f"{headline['share_above'] * 100:.1f}%")
+```
+
+```{python}
+#| content: valuebox
+#| title: "Non-paying households able to pay (mid case, 10% threshold)"
+row = split.loc[(split["threshold"] - 0.10).abs().idxmin()]
+dict(icon="people", color="info", value=f"{row['able_to_pay_mid'] / 1e6:.1f} million")
+```
+
+## Row {height=75%}
+
+```{python}
+#| title: "Affordability threshold curve"
+fig = px.line(grid, x=grid["threshold"] * 100, y=grid["share_above"] * 100,
+              labels={"x": "Threshold (% of income)", "y": "Households above (%)"})
+fig
+```
+
+```{python}
+#| title: "Indigent registration coverage by province"
+data = coverage[coverage["cutoff_rand"] == 4500].sort_values("coverage")
+px.bar(data, x=data["coverage"] * 100, y="province", orientation="h",
+       labels={"x": "Registered as % of qualifying households"})
+```
+
+```{python}
+#| title: "Counterfactual price change"
+px.line(cf, x=cf["able_share"] * 100, y="change_vs_payers_only_pct",
+        color=cf["unpaid_share"].astype(str),
+        labels={"x": "Share of non-payers able to pay (%)",
+                "y": "Change in price (%)", "color": "Unpaid share"})
+```
