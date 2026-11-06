@@ -1,3 +1,4 @@
+See [FINDINGS.md](projects/a_who_pays/paper/FINDINGS.md) for a one-page summary.
 # SA electricity non-payment
 
 Personal research repository on electricity non-payment, tariffs and affordability in South
@@ -19,10 +20,9 @@ When the real data is downloaded, set `data_mode: raw` in `config/assumptions.ya
 Raw survey files are not stored here (licences usually forbid redistribution). See
 `data/raw/SOURCES.md` for where to get each file.
 
-## Start
 
-See START_HERE.md.
+
 
 ## Status
 
-Project A: in progress.
+Project A: in completed.
