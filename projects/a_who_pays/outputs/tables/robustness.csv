@@ -1,0 +1,8 @@
+check,baseline,alternative,difference,unit
+Households above the line: unweighted instead of weighted,0.18363711712039588,0.17830824463059772,-0.005328872489798159,share
+Households above the line: without Northern Cape and Free State,0.18363711712039588,0.18732215445894573,0.003685037338549857,share
+Households above the line: cash income only (no in-kind),0.18363711712039588,0.1963285062270805,0.01269138910668463,share
+Households above the line: excluding households with free electricity,0.18363711712039588,0.19970907746987307,0.016071960349477193,share
+Able-to-pay share (middle case): without the two smallest provinces,0.8118037797946158,0.8109793326507861,-0.0008244471438296763,share
+"Revenue (R bn, poorest 50% pool): price factor low instead of central",7.876413055943535,7.470836562764352,-0.40557649317918276,R bn
+"Revenue (R bn, poorest 50% pool): price factor high instead of central",7.876413055943535,8.863903648031979,0.9874905920884443,R bn
